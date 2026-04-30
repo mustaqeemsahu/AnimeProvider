@@ -6,7 +6,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
 
 from config import FORCE_CHANNEL, REPORT_GROUP_ID, START_PHOTO
-from database.mongo import add_user
+from mongodb import add_user
 from utils.helpers import now
 
 # ==============================
