@@ -5,9 +5,9 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
 
-from database.mongo import get_all_anime
-from utils.cooldown import check_cooldown
-from utils.filters import force_sub
+from mongodb import get_all_anime
+from utilc import check_cooldown
+from utilf import force_sub
 from config import FORCE_CHANNEL
 
 # ==============================
