@@ -6,7 +6,7 @@ from telegram import Update
 from telegram.ext import ContextTypes
 
 from config import ADMIN_IDS
-from database.mongo import add_anime_db, delete_anime_db
+from mongodb import add_anime_db, delete_anime_db
 
 
 # ==============================
