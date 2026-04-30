@@ -2,6 +2,9 @@
 # MAIN BOT FILE
 # ==============================
 
+import logging
+logging.basicConfig(level=logging.INFO)
+
 from telegram.ext import (
     ApplicationBuilder,
     CommandHandler,
