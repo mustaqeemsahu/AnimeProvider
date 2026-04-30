@@ -1,15 +1,38 @@
+# ==============================
+# CONFIG FILE (ENV + CONSTANTS)
+# ==============================
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+# 🔐 ENV VARIABLES
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+MONGO_URI = os.getenv("MONGO_URI")
+
+# ⚠️ SAFETY CHECK
+if not BOT_TOKEN:
+    raise ValueError("BOT_TOKEN is missing in .env")
+
+if not MONGO_URI:
+    raise ValueError("MONGO_URI is missing in .env")
+
+# ==============================
+# BOT SETTINGS
+# ==============================
+
 FORCE_CHANNEL = "@Team_Sahuu"
-BOT_TOKEN = "8437853291:AAFHBWa0p_43VnlfFj2y93e2hKSHEFVWNTc"
-DATA_FILE = "data.json"
+
 ADMIN_IDS = [7953380478, 5208998008]
+
 REPORT_GROUP_ID = -1003625335610
 
-BOT_STATUS = {"active": True}
-DIRECT_SEARCH_GROUPS = {}
-SEARCH_INDEX = {}
-ANIME_CACHE = {}
-REFERRAL_PREMIUM_TARGET = 5
 ANIME_PER_PAGE = 25
+
+# ==============================
+# MEDIA
+# ==============================
 
 START_PHOTO = "AgACAgUAAxkBAAICQGm1FC6u4tZ-_yIdBE69O2Cgk134AAImD2sbCjyoVYkRWpbe68nrAQADAgADeQADOgQ"
 GROUP_PHOTO = "AgACAgUAAxkBAAICQGm1FC6u4tZ-_yIdBE69O2Cgk134AAImD2sbCjyoVYkRWpbe68nrAQADAgADeQADOgQ"
