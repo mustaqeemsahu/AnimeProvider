@@ -5,7 +5,7 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
 
-from database.mongo import get_all_anime
+from mongodb import get_all_anime
 from config import ANIME_PER_PAGE
 
 # ==============================
