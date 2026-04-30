@@ -6,7 +6,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
 
 from config import ADMIN_IDS, FORCE_CHANNEL
-from database.mongo import add_anime_db, delete_anime_db, get_all_anime
+from mongodb import add_anime_db, delete_anime_db, get_all_anime
 from utils.filters import force_sub, check_bot_status
 
 # ==============================
