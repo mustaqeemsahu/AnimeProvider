@@ -8,7 +8,7 @@ from telegram.constants import ChatMemberStatus
 import random
 
 from config import ADMIN_IDS
-from utils.filters import BOT_STATUS
+from utilf import BOT_STATUS
 
 
 ROAST_LINES = [
