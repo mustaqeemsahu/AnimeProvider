@@ -6,7 +6,7 @@ from telegram import Update
 from telegram.ext import ContextTypes
 
 from config import ADMIN_IDS
-from database.mongo import get_all_users, get_all_groups
+from mongodb import get_all_users, get_all_groups
 
 
 # ==============================
