@@ -7,7 +7,7 @@ from telegram.ext import ContextTypes
 
 from config import ADMIN_IDS, FORCE_CHANNEL
 from mongodb import add_anime_db, delete_anime_db, get_all_anime
-from utils.filters import force_sub, check_bot_status
+from utilf import force_sub, check_bot_status
 
 # ==============================
 # ADD ANIME
