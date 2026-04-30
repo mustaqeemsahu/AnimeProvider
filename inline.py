@@ -5,7 +5,7 @@
 from telegram import InlineQueryResultArticle, InputTextMessageContent, InlineKeyboardButton, InlineKeyboardMarkup, InlineQueryResultCachedSticker
 from telegram.ext import ContextTypes, Update
 
-from database.mongo import get_all_anime
+from mongodb import get_all_anime
 from config import FORCE_CHANNEL
 
 
