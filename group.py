@@ -6,7 +6,7 @@ from telegram import Update
 from telegram.ext import ContextTypes
 
 from config import GROUP_PHOTO, REPORT_GROUP_ID, WELCOME_EMOJIS
-from database.mongo import add_group
+from mongodb import add_group
 from utils.helpers import now
 import random
 
