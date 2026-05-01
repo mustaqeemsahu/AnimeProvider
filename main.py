@@ -45,7 +45,7 @@ from misc import (
 )
 
 # Group
-from group import new_user, bot_added
+from group import welcome_new_members, chat_member_update
 
 # Mongo
 from mongodb import load_anime_cache, create_indexes
