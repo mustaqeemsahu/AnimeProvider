@@ -67,7 +67,7 @@ async def broadcast(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # BULK ADD USERS / GROUPS
 # ==============================
 
-from database.mongo import users_col, groups_col
+from mongodb import users_col, groups_col
 
 async def bulk_add(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
