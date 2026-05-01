@@ -6,7 +6,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
 
 from mongodb import get_all_anime
-from handlers.animelist import build_page
+from animelist import build_page
 from config import ANIME_PER_PAGE, FORCE_CHANNEL
 
 
