@@ -118,9 +118,9 @@ async def main():
     # GROUP EVENTS
     # ==============================
 
-    app.add_handler(MessageHandler(filters.StatusUpdate.NEW_CHAT_MEMBERS, new_user))
-    app.add_handler(MessageHandler(filters.StatusUpdate.BOT_ADDED, bot_added))
-
+    app.add_handler(MessageHandler(filters.StatusUpdate.NEW_CHAT_MEMBERS, welcome_new_members))
+    app.add_handler(ChatMemberHandler(chat_member_update, ChatMemberHandler.MY_CHAT_MEMBER))
+    
     # ==============================
     # RUN BOT
     # ==============================
