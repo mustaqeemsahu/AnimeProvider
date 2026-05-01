@@ -29,7 +29,7 @@ from callback import button_click
 from inline import inline_query
 
 # Admin / DB
-from add import add_anime, del_anime
+from anime import add_anime, del_anime
 from broadcast import broadcast, stats, bulk_add
 
 # Misc
